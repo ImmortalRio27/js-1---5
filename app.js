@@ -11,6 +11,7 @@ for (var stopCycle = 'stop'; command != stopCycle;) { // создается бе
                      //проверяет на команду add(добавляем элемент)
         arr.push(userName)  
                    //добавляем элемент в массив
+               console.log(`вы добавили элемент: ${userName}`); //в консоли выводится информация о добавлении
     }else if(command == 'del') {
                //проверяет на команду del(удаляем элемент)
         let deleteCommand = arr.indexOf(userName)
@@ -19,6 +20,7 @@ for (var stopCycle = 'stop'; command != stopCycle;) { // создается бе
          //получаем позицию слева 
         arr.splice(deleteCommand, deleteCommand2)
            //удаляем нужный нам элемент (начиная от deleteCommand, заканчивая deleteCommand2)
+              console.log(`вы удалили элемент: ${userName}`);   //в консоли выводится информация об удалении
     }
     
 
